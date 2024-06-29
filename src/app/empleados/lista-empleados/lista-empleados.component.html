@@ -1,0 +1,36 @@
+<div class="container mt-5 d-flex justify-content-center">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <!-- Eliminamos el botón de acordeón -->
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+      <!-- Añadimos la clase 'show' para mostrar siempre la tabla -->
+      <table class="table">
+        <thead class="thead">
+          <tr>
+            <th scope="col">Número de Empleado</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Fecha Nacimiento</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr *ngFor="let empleado of empleados; let i = index">
+            <td>{{ empleado.numeroe }}</td>
+            <td>{{ empleado.nombre }}</td>
+            <td>{{ empleado.correo }}</td>
+            <td>{{ empleado.telefono }}</td>
+            <td>{{ empleado.fecha }}</td>
+            <td>{{ empleado.sexo }}</td>
+            <td>
+              <button class="btn btn-danger" (click)="eliminarEmpleado(i)">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

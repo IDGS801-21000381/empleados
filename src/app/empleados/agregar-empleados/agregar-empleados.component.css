@@ -1,0 +1,16 @@
+/* Aplicar color de fondo al contenedor principal */
+.container {
+  background-color: #405480;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Asegurarse de que la letra sea en cursiva */
+.input-italic {
+  font-style: italic;
+}
+
+/* Cambiar el color de texto a blanco para una mejor visibilidad */
+.text-white {
+  color: white;
+}
